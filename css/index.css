@@ -1,0 +1,534 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-family: 'Poppins';
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* Desktop */
+header{
+    width: 100%;
+}
+.container{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+.logo{
+    height: 100%;
+    width: 50px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+}
+.menu {
+    display: inline-flex;
+    border: 2px solid black;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.menu-item{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 0px;
+    background-color: none;
+    color: black;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    border-right: 2px solid black;
+}
+.menu-item:last-child {
+    border-right: none;
+  }
+.menu-item:hover {
+    background: #eeeeee;
+    transition: background 0.3s ease-out;
+}
+.hero-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+    row-gap: 80px;
+}
+.hero-title > h1 {
+    font-size: 50px;
+    font-weight: 700;
+    color: rgba(59,71,84,255);
+}
+.hero-title > p {
+    font-size: 25px;
+    color: rgba(138,156,175,255);
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    align-items: center;
+    gap: 40px;
+}
+.about-contact {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+.about-img{
+    height: 580px;
+    width: 100%;
+    border-radius: 5px;
+    padding-bottom: 20px;
+}
+.content-caption > p{
+    color: rgba(133,151,171,255);
+    font-style: italic;
+    padding-bottom: 40px;
+    font-size: 20px;
+}
+.content-person {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.content-person > img {
+    border-radius: 50%;
+}
+.person-info {
+    display: flex;
+    flex-direction: column;
+}
+.person-info > h6 {
+    color: rgba(41,50,61,255);
+    font-size: 20px;
+}
+.person-info > p {
+    color: rgba(133,151,171,255);
+    font-style: italic;
+    margin-top: 13px;
+    font-size: 17px;
+}
+.contact{
+    width: 40%;
+}
+.border{
+    border: 2px solid rgba(237,240,244,255);
+    width: 200px;
+}
+.information-title{
+    font-size: 23px;
+    color: rgba(41,50,61,255);
+    margin-bottom: 35px;
+}
+.information-list{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.information-list > li {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.list-number {
+    background-color: rgba(237,240,244,255);
+    color: rgba(159,175,193,255);
+    font-weight: 500;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 23px;
+}
+.list-paragraph {
+    font-size: 20px;
+    color: rgba(136,153,173,255);
+}
+
+/* Card About */
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    background-color: rgba(237,240,244,255);
+    padding: 50px;
+    border-radius: 5px;
+    margin: none;
+}
+.card-title > h4 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.card-title > p {
+    font-size: 18px;
+    color: rgba(133,151,171,255);
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.input {
+    display: flex;
+    flex-direction: column;
+}
+.input .details {
+    font-weight: 1000;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.input input {
+    height: 70px;
+    font-family: 'poppins';
+    font-size: 20px;
+    outline: none;
+    border-radius: 5px;
+    border: 3px solid rgba(201,211,221,255);
+    padding-left: 10px;
+    transition: border-color 0.3s ease-out;
+}
+.input input:focus {
+    outline: 3px solid rgba(78,86,95,255);
+    border: none;
+}
+.input .option {
+    height: 70px;
+    font-family: 'poppins';
+    font-size: 20px;
+    outline: none;
+    border-radius: 5px;
+    border: 3px solid rgba(201,211,221,255);
+    padding-left: 10px;
+    transition: border-color 0.3s ease-out;
+}
+.input .option:focus {
+    outline: 3px solid rgba(78,86,95,255);
+    border: none;
+}
+.submit input {
+    height: 70px;
+    width: 100%;
+    outline: none;
+    color: white;
+    border: none;
+    font-size: 20px;
+    font-family: 'poppins';
+    font-weight: 1000;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: rgba(41,50,61,255);
+    cursor: pointer;
+}
+.submit input:hover {
+    background: white;
+    color: rgba(41,50,61,255);
+}
+.package-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 120px;
+    background-color: rgba(237,240,244,255);
+    margin: none;
+}
+.package-title > h1 {
+    font-size: 50px;
+    font-weight: 700;
+    color: rgba(59,71,84,255);
+}
+.border-2 {
+    width: 200px;
+    border: 0px solid white;
+    height: 60px;
+}
+.columns {
+    padding-top: 70px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    column-gap: 20px;
+}  
+.column {
+    width: calc(33.33% - 100px);
+    margin: auto;
+}
+.package-icon {
+    display: flex;
+    gap: 20px;
+    align-items: space-between;
+}
+.package-icon > img {
+    border-radius: 50%;
+}
+.package-info > h6 {
+    padding-top: 25px;
+    color: rgba(41,50,61,255);
+    font-size: 25px;
+}
+.package-info > p {
+    color: rgba(133,151,171,255);
+    margin-top: 25px;
+    font-size: 18px;
+    padding-bottom: 100px;
+}
+.border-3 {
+    width: 200px;
+    border: 2px solid rgba(237,240,244,255);
+}
+.closing{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+    row-gap: 30px;
+}
+.closing > h1 {
+    font-size: 50px;
+    font-weight: 700;
+    color: rgba(59,71,84,255);
+}
+.closing > p {
+    font-size: 20px;
+    color: rgba(138,156,175,255);
+    text-align: center;
+    padding-bottom: 25px;
+}
+.closing button {
+    height: 70px;
+    width: 30%;
+    outline: none;
+    color: white;
+    border: none;
+    font-size: 20px;
+    font-family: 'poppins';
+    font-weight: 1000;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: rgba(41,50,61,255);
+    cursor: pointer;
+}
+.closing button:hover {
+    background: #a1acbb;
+    color: rgba(41,50,61,255);
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+}
+.footer > p {
+    font-size: 18px;
+    color: rgba(138,156,175,255);
+    text-align: center;
+    padding-bottom: 10px;
+}
+/* android */
+@media screen and (max-width: 800px) {
+    .hero-title {
+        padding: 30px;
+        row-gap: 20px;
+    }
+    .hero-title > h1 {
+        font-size: 25px;
+    }
+    .hero-title > p {
+        font-size: 11px;
+    }
+    .logo {
+        padding: 20px;
+        margin-bottom: 15px;
+    }
+    .menu {
+        text-align: center;
+        width: 50%;
+        align-items: center;
+        width: fit-content;
+        margin-right: 15px;
+        font-size: 10px;
+    }
+    .about-contact {
+        display: block;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr, 5fr;
+        gap: 1.5rem;
+        margin: 15px;
+    }
+    .about {
+        width: 100%;
+    }
+    .contact{
+        margin-top: 15px;
+        width: 100%;
+    }
+    .columns {
+        display: block;
+        margin: 10px;
+    }
+    .column {
+    width: 100%;
+    }
+    .package-info > p {
+    padding-bottom: 25px;
+    }
+    .closing > h1 {
+    text-align: center;
+    font-size: 20px;
+    }
+    .closing > p {
+        font-size: 12px;
+    }
+    .closing button {
+        font-size: 15px;
+        width: 100%;
+        height: 50px;
+    }
+    .about-img {
+        display: flex;
+        height: 350px;
+    }
+    .list-paragraph {
+        font-size: 20px;
+        color: rgba(136,153,173,255);
+    }
+    .list-number {
+        font-size: 15px;
+    }
+    .list-paragraph {
+        font-size: 15px;
+    }
+    .list-number {
+        font-weight: 500;
+        height: 30px;
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        font-size: 15px;
+    }
+    .information-list > li {
+        gap: 10px;
+    }
+    .information-title {
+        font-size: 15px;
+    }
+    .content-caption > p {
+        font-size: 15px;
+    }
+    .content-person > img {
+        height: 40px;
+        width: 40px;
+    }
+    .person-info > h6 {
+        font-size: 15px;
+    }
+    .person-info > p {
+        font-size: 10px;
+    }
+    .card-title > h4 {
+        font-size: 20px;
+    }
+    .card-title > p {
+        font-size: 15px;
+    }
+    .input .details {
+        font-size: 15px;
+    }
+    .input input {
+        height: 40px;
+        font-family: 'poppins';
+        font-size: 15px;
+    }
+    .input .option {
+        height: 40px;
+        font-family: 'poppins';
+        font-size: 15px;
+        outline: none;
+
+    }
+    .submit input {
+        height: 40px;
+        font-size: 15px;
+        font-family: 'poppins';
+        font-weight: 500;
+    }
+    .package-title > h1 {
+        font-size: 20px;
+    }
+    .footer > p {
+        font-size: 8px;
+    }
+    .package-info > h6 {
+        font-size: 15px;
+        padding-top: 10px;
+    }
+    .package-info > p {
+        font-size: 10px;
+        margin-top: 5px;
+    }
+    .package-icon > img {
+        height: 40px;
+        width: 40px;
+    }
+    .package-icon {
+        gap: 5px;
+    }
+    .package-info {
+        margin-top: none;
+    }
+
+
+}

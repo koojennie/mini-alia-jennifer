@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelU | Jeju</title>
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+    <!-- header -->
+    <header class="header-wrapper" style="border-bottom: 0.15px solid rgba(237,240,244,255)">
+        <navbar class="container">
+            <div class="navbar">
+                <img class="logo" src="./images/revou.png" alt="" />
+                <div class="menu">
+                    <a class="menu-item" href="#hero">Home Page</a>
+                    <a class="menu-item" href="#package">Our Packages</a>
+                    <a class="menu-item" href="#call-us">Call us</a>
+                </div>
+            </div>
+        </navbar>
+    </header>
+    <!-- main -->
+    <main>
+        <section id="hero">
+            <div class="container">
+                <div class="hero-title">
+                    <h1>Your Best Travel Agent's</h1>
+                    <p>Best choice of 2023 nationwide Travel Agent</p>
+                </div>
+            </div>
+        </section>
+        <section id="about-contact">
+            <div class="container">
+                <div class="about-contact">
+                    <div class="about">
+                        <img 
+                           class="about-img" 
+                           src="https://source.unsplash.com/random/?jeju-beach&sig=1"
+                        />
+                        <img 
+                           class="about-img" 
+                           src="https://source.unsplash.com/random/?jeju-beach&sig=2"
+                        />
+                        <img 
+                           class="about-img" 
+                           src="https://source.unsplash.com/random/?jeju-beach&sig=3"
+                        />
+                        <img 
+                           class="about-img" 
+                           src="https://source.unsplash.com/random/?jeju-beach&sig=4"
+                        />
+                        <img 
+                           class="about-img" 
+                           src="https://source.unsplash.com/random/?jeju-beach&sig=5"
+                        />
+                        <img 
+                           class="about-img" 
+                           src="https://source.unsplash.com/random/?jeju-beach&sig=6"
+                        />
+                        <img 
+                           class="about-img" 
+                           src="https://source.unsplash.com/random/?jeju-beach&sig=7"
+                        />
+                        <img 
+                           class="about-img" 
+                           src="https://source.unsplash.com/random/?jeju-beach&sig=8"
+                        />
+                        <img 
+                           class="about-img" 
+                           src="https://source.unsplash.com/random/?jeju-beach&sig=9"
+                        />
+                        <div class="about-content">
+                            <div class="content-caption">
+                                <p>"The trip was really fun! Thanks to TravelU for serving us the very best experiences. We really enjoyed every seconds here."</p>
+                            </div>
+                            <div class="content-person">
+                                <img src="./images/person.png" height="70" width="70" alt=""/>
+                                <div class="person-info">
+                                    <h6>Margarett Venicia</h6>
+                                    <p>Ibu Rumah Tangga, 33</p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="border"/>
+                        <div class="about-information">
+                            <h6 class="information-title">We serves Jeju domestic tour packages, transportation, hotel and concert info. Your Happines is ours too. So, what are you waiting for? Here are several benefits you get from us if you want to book from now!</h6>
+                            <ul class="information-list">
+                                <li>
+                                    <div class="list-number">1</div>
+                                    <p class="list-paragraph">100% guarantee and no cancel fee.</p>
+                                </li>
+                                <li>
+                                    <div class="list-number">2</div>
+                                    <p class="list-paragraph">Get discount for your travel activities up to 70%.</p>
+                                </li>
+                                <li>
+                                    <div class="list-number">3</div>
+                                    <p class="list-paragraph">Early check-in for those who paid off.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <script>
+                        var slideIndex = 1;
+                        showDivs(slideIndex);
+        
+                        function plusDivs(n) {
+                            showDivs((slideIndex += n));
+                        }
+        
+                        function showDivs(n) {
+                            var i;
+                            var imgList = document.getElementsByClassName("about-img");
+                            if (n > imgList.length) slideIndex = 1;
+                            else if (n < 1) slideIndex = imgList.length;
+        
+                            for (i = 0; i < imgList.length; i++) {
+                                imgList[i].style.display = "none";
+                            }
+        
+                            imgList[slideIndex - 1].style.display = "block";
+                        }
+        
+                        setInterval(() => {
+                            plusDivs(1);
+                        }, 1000);
+        
+                        // 1000 ms means 1 second
+                    </script>
+                    <div class="contact">
+                        <div class="card">
+                            <div class="card-title">
+                                <h4>Contact Us</h4>
+                                <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima.</p>
+                            </div>
+                            <form class="contact-us-form" name="contact-us-form" onsubmit="return validateForm()">
+                                <div class="input">
+                                    <span class="details">Your Name:</span>
+                                    <input type="text" placeholder="First and last name" name="full-name">
+                                </div>
+                                <div class="input">
+                                    <span class="details">Email Address:</span>
+                                    <input type="text" placeholder="example@email.com" name="email">
+                                </div>
+                                <div class="input">
+                                    <span class="details">What are you interested in?</span>
+                                    <select class="option" name="option">
+                                        <option disabled hidden selected>Select option</option>
+                                        <option value="Food-culinaries">Exploring food around Jeju</option>
+                                        <option value="Best-beaches">Healing trip in front of the beach</option>
+                                        <option value="Concert festivals">Attending a few of concert festivals</option>
+                                        <option value="Amusement parks">Riding many attractions and Go-Kart</option>
+                                        <option value="Water sports">Enjoying the beauty of coast & sea</option>
+                                        <option value="Resorts and hotels">Stay in all 5 stars resorts and hotels</option>
+                                    </select>
+                                </div>
+                                <div class="submit">
+                                    <input type="submit" value="SEND">
+                                </div>
+                            </form>
+                            <script>
+                                function validateForm() {
+                                    var name = document.forms["contact-us-form"]["full-name"].value;
+                                    var email = document.forms["contact-us-form"]["email"].value;
+                                    var option = document.forms["contact-us-form"]["option"].value;
+
+                                    if (name == "" || email == "" || option == "") {
+                                        alern("Input tidak boleh kosong");
+                                        return false;
+                                    }
+
+                                    document.getElementById("sender-full-name").innerText = name;
+                                    document.getElementById("sender-email").innerText = email;
+                                    document.getElementById("sender-option").innerText = option;
+                                    return false;
+                                }
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="border-2">
+        <section id="package">
+            <div class="package-title">
+                <h1>Our Packages</h1>
+            </div>
+            <div class="container">
+                <div class="columns">
+                    <div class="column">
+                        <div class="package-icon">
+                            <img src="./images/eat.png" height="70" width="70">
+                            <div class="package-info">
+                                <h6>Food culinaries</h6>
+                                <p>Explore most-delicious sea-food and most-famous Jeju black pork in many restaurants. We also offer you rented car and minibus.</p>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="package-icon">
+                            <img src="./images/beach.png" height="70" width="70">
+                            <div class="package-info">
+                                <h6>Best beaches</h6>
+                                <p>See glorious views such as sunset and sunrise at many Jeju beaches such as Hyeopjae beach, Hamdok beach, and Saekdal beach.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="package-icon">
+                            <img src="./images/concert.png" height="70" width="70">
+                            <div class="package-info">
+                                <h6>Concert festivals</h6>
+                                <p>As we know Kpop Hallyu already known around the world. This festival brings you to meet many various kpop artists and genres.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="border-3">
+                <div class="columns">
+                    <div class="column">
+                        <div class="package-icon">
+                            <img src="./images/go-kart.png" height="70" width="70">
+                            <div class="package-info">
+                                <h6>Amusement parks</h6>
+                                <p>Enjoy fun experiences with your loved one with various attractions such as famous Go-Kart, merry go round, and roller coaster.</p>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="package-icon">
+                            <img src="./images/watersport.png" height="70" width="70">
+                            <div class="package-info">
+                                <h6>Water sports</h6>
+                                <p>Feel the thrilling and exciting water sport such as surfing, paralayang, and kayaking. See the beauty of the coastal reef under the water.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="package-icon">
+                            <img src="./images/hotel.png" height="70" width="70">
+                            <div class="package-info">
+                                <h6>Resorts and hotels</h6>
+                                <p>Experience the most beautiful scenery in front of your room with luxury facilities, private swimming pool & steward in front of your room.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section id="call-us" style="border-top: 0.15px solid rgba(237,240,244,255)";>
+                <div class="container">
+                    <div class="closing">
+                        <h1>Your holiday trip was waiting for you</h1>
+                        <p>We're here for you! Contact us if you have a question about the packages. We could give you an offer that suits you the most. Click the button below and start chat or call with us right now. Work hour only.</p>
+                        <button>CALL TO ACTION</button>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer style="border-top: 0.15px solid rgba(237,240,244,255)">
+        <div class="container">
+            <img src="./images/revou.png" height="50" width="50" class="center">
+            <div class="footer">
+                <p>Terms of Service &nbsp; Privacy Policy</p>
+                <p>© 2023 &nbsp; Revou</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
