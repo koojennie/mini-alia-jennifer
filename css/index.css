@@ -388,7 +388,7 @@ form {
         font-size: 11px;
     }
     .logo {
-        padding: 20px;
+        padding: 10px;
         margin-bottom: 15px;
     }
     .menu {
@@ -396,7 +396,7 @@ form {
         width: 50%;
         align-items: center;
         width: fit-content;
-        margin-right: 15px;
+        margin-right: 10px;
         font-size: 10px;
     }
     .about-contact {
@@ -404,13 +404,13 @@ form {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr, 5fr;
         gap: 1.5rem;
-        margin: 15px;
+        margin: 25px;
     }
     .about {
         width: 100%;
     }
     .contact{
-        margin-top: 15px;
+        margin-top: 50px;
         width: 100%;
     }
     .columns {
